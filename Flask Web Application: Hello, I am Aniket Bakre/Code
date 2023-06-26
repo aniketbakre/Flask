@@ -1,0 +1,16 @@
+# Import the Flask module
+from flask import Flask
+
+# Create an instance of the Flask application
+app = Flask(__name__)
+
+# Define a route for the root URL ("/")
+@app.route("/")
+def My_name():
+    # Return a string as the response
+    return "Hello!! I am Aniket Bakre."
+
+# Run the Flask application if this script is executed directly
+if __name__ == "__main__":
+    # Start the Flask development server
+    app.run()
